@@ -1040,7 +1040,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project__images {
-    max-width: 800px;
+    max-width: 900px;
     opacity: .7;
     transition: opacity .3s
 }
@@ -1054,7 +1054,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project__img--desktop {
-    width: 65%
+    width: 100%
 }
 
 .project__img--tablet {

@@ -8,7 +8,6 @@ const skillsContent = [
         "/files/css.svg",
         "/files/js.svg",
         "/files/vue.svg",
-        "/files/react.svg",
         "/files/jquery.png"
         ],
     },
@@ -26,13 +25,13 @@ const skillsContent = [
     },
     {
         title: "Tools",
-        description: "Utilizo GIT, GitLab, GitHub y sigo aprendiendo otras herramientas de interés para futuros proyectos",
-        logos: ["/files/git.svg", "/files/vite.svg"],
+        description: "Utilizo GitLab y GitHub, y sigo aprendiendo otras herramientas de interés para futuros proyectos",
+        logos: ["/files/git.svg"],
     },
     {
         title: "Methodologies",
         description:
-        "Mi formación en los próximos meses icluye conocimientos de CLEAN CODE y SOLID",
+        "Mi formación en los próximos meses icluye conocimientos de AGILE, TDD (Test-Driven Development) y BDD (Behavior-Driven Development)",
         logos: ["/files/scrum.svg", ],
     },
 ];
