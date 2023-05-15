@@ -13,4 +13,4 @@ Aquí encontratrás toda la información sobre mis habilidades, proyectos, exper
 * [LinkedIn](https://www.linkedin.com/in/adriaboguna/)
 
 ## ⚡ Puedes verlo en
-- [https://adriaboguna.github.io/portfolio/](https://adriaboguna.github.io/portfolio/)
+- [https://adriaboguna.github.io/Portfolio/](https://adriaboguna.github.io/Portfolio/)
