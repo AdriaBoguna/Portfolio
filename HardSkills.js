@@ -26,13 +26,13 @@ const skillsContent = [
     {
         title: "Tools",
         description: "Utilizo GitLab y GitHub, y sigo aprendiendo otras herramientas de interés para futuros proyectos",
-        logos: ["/files/git.svg"],
+        logos: ["./files/git.svg"],
     },
     {
         title: "Methodologies",
         description:
         "Mi formación en los próximos meses icluye conocimientos de AGILE, TDD (Test-Driven Development) y BDD (Behavior-Driven Development)",
-        logos: ["/files/scrum.svg", ],
+        logos: ["./files/scrum.svg", ],
     },
 ];
   
