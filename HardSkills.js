@@ -4,11 +4,11 @@ const skillsContent = [
         description:
         "Es mi área fuerte de conocimiento y la que más me entusiasma pues tienes relación directa con el cliente. Domino HTML, CSS y JAVASCRIPT nativos y durante mi proceso también he aprendido a utilizar frameworks como Vue, React y jQuery.",
         logos: [
-        "/files/html.svg",
-        "/files/css.svg",
-        "/files/js.svg",
-        "/files/vue.svg",
-        "/files/jquery.png"
+        "./files/html.svg",
+        "./files/css.svg",
+        "./files/js.svg",
+        "./files/vue.svg",
+        "./files/jquery.png"
         ],
     },
     {
@@ -16,10 +16,10 @@ const skillsContent = [
         description:
         "Trabajo con la gestión de bases de datos NoSQL, como MongoDB, y bases de datos relacionales, como PostgreSQL y MySQL, además de ser un desarrollador experimentado en C#. Sin duda, es un área en la que me gustaría seguir formándome y ampliando mis habilidades para mantenerme actualizado y ser más eficiente en la resolución de problemas.",
         logos: [
-        "/files/node.svg",
-        "/files/charpp.png",
-        "/files/mongo.svg",
-        "/files/Postgresql.png",
+        "./files/node.svg",
+        "./files/charpp.png",
+        "./files/mongo.svg",
+        "./files/Postgresql.png",
         
         ],
     },
