@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://github.com/AdriaBoguna/Portfolio/blob/main/files/cabezera.PNG" />
+</p>
 
 <h1 align="left">Portfolio</h1>
 
