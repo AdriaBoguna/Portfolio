@@ -256,7 +256,7 @@ html {
 
 body {
     background-color: #1c1c1c;
-    background-image: url(/files/background.png);
+    background-image: url(./files/background.png);
     background-repeat: repeat;
     color: var(--tertiary);
     font-family: var(--poppins);
