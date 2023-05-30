@@ -70,23 +70,6 @@
     }
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes show-section {
-    to {
-        transform: translateY(0);
-        opacity: 1
-    }
-}
-
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
 :before,
@@ -96,20 +79,24 @@
 
 html {
     -moz-tab-size: 4;
-    tab-size: 4
-}
-
-html {
+    tab-size: 4;
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    font-size: 100%
 }
 
 body {
-    margin: 0
-}
-
-body {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: #1c1c1c;
+    background-image: url(./files/background.png);
+    background-repeat: repeat;
+    color: var(--tertiary);
+    font-family: var(--poppins);
+    font-size: 1rem;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased
 }
 
 hr {
@@ -247,23 +234,6 @@ summary {
     --headerHeight: 100vh;
     --scrollbarBG: #1c1c1c;
     --thumbBG: #9ca3af88
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 100%
-}
-
-body {
-    background-color: #1c1c1c;
-    background-image: url(./files/background.png);
-    background-repeat: repeat;
-    color: var(--tertiary);
-    font-family: var(--poppins);
-    font-size: 1rem;
-    margin: 0;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased
 }
 
 main {
@@ -839,6 +809,16 @@ body::-webkit-scrollbar-thumb {
     margin-left: 2rem
 }
 
+.skills__container--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0;
+    padding-top: 0
+}
+
 .skills__menu ul {
     display: flex;
     flex-direction: column;
@@ -1010,6 +990,23 @@ body::-webkit-scrollbar-thumb {
 
     .skills__container--mobile {
         display: none
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes show-section {
+    to {
+        transform: translateY(0);
+        opacity: 1
     }
 }
 
