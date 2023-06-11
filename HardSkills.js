@@ -2,37 +2,47 @@ const skillsContent = [
   {
     title: "Frontend",
     description:
-      "Es mi área fuerte de conocimiento y la que más me entusiasma pues tienes relación directa con el cliente. Domino HTML, CSS y JAVASCRIPT nativos y durante mi proceso también he aprendido a utilizar frameworks como Vue, React y jQuery.",
+      "Es mi área fuerte de conocimiento y la que más me entusiasma pues tienes relación directa con el cliente. Domino <strong>HTML</strong>, <strong>CSS3</strong> y <strong>JavaScript</strong>, junto con frameworks y librerías como <strong>Vue.js</strong> y <strong>jQuery</strong>. Durante mi proceso también he aprendido <strong>Bootstrap4</strong> para diseño responsivo y preprocesadores CSS como <strong>LESS</strong> y <strong>SASS</strong>.  Actualmente, estoy enfocado en perfeccionar mis habilidades en <strong>React</strong> y <strong>Angular</strong>.",
     logos: [
-      "./files/html.svg",
-      "./files/css.svg",
-      "./files/js.svg",
-      "./files/vue.svg",
-      "./files/jquery.png",
+      { src: "./files/html.svg", name: "HTML" },
+      { src: "./files/css.svg", name: "CSS" },
+      { src: "./files/js.svg", name: "JavaScript" },
+      { src: "./files/vue.svg", name: "Vue" },
+      { src: "./files/jquery.png", name: "jQuery" },
+      { src: "./files/bootstrap.png", name: "Bootstrap" },
     ],
   },
   {
     title: "Backend",
     description:
-      "Trabajo con la gestión de bases de datos NoSQL, como MongoDB, y bases de datos relacionales, como PostgreSQL y MySQL, además de ser un desarrollador experimentado en C#. Sin duda, es un área en la que me gustaría seguir formándome y ampliando mis habilidades para mantenerme actualizado y ser más eficiente en la resolución de problemas.",
+      "Trabajo con la gestión de bases de datos NoSQL, como <strong>MongoDB</strong>, y bases de datos relacionales, como <strong>PostgreSQL</strong> y <strong>MySQL</strong>, además de ser un desarrollador experimentado en <strong>C#</strong>. También tengo experiencia en <strong>APIs RESTful</strong> utilizando <strong>Node.js/Express</strong> y <strong>Swagger</strong>. Sin duda, es un área en la que me gustaría seguir formándome y ampliando mis habilidades para mantenerme actualizado y ser más eficiente en la resolución de problemas.",
     logos: [
-      "./files/node.svg",
-      "./files/charpp.png",
-      "./files/mongo.svg",
-      "./files/Postgresql.png",
+      { src: "./files/node.svg", name: "Node.JS" },
+      { src: "./files/charpp.png", name: "C#" },
+      { src: "./files/mongo.svg", name: "MongoDB" },
+      { src: "./files/Postgresql.png", name: "Postgres" },
+      { src: "./files/swagger.png", name: "Swagger" },
     ],
   },
   {
     title: "Tools",
     description:
-      "Utilizo GitLab y GitHub, y sigo aprendiendo otras herramientas de interés para futuros proyectos",
-    logos: ["./files/git.svg"],
+      "Trabajo con <strong>GitLab</strong> y <strong>GitHub</strong> para control de versiones y colaboración en proyectos. <br>Además, utilizo <strong>Unity</strong> y <strong>Blender</strong> para el desarrollo de videojuegos y creación de modelos 3D. Mi aprendizaje es constante y sigo aprendiendo otras herramientas de interés para futuros proyectos.",
+    logos: [
+      { src: "./files/git.svg", name: "Git" },
+      { src: "./files/unity3.png", name: "Unity" },
+      { src: "./files/blender.png", name: "Blender" },
+    ],
   },
   {
     title: "Methodologies",
     description:
-      "Mi formación en los próximos meses icluye conocimientos de AGILE, TDD (Test-Driven Development) y BDD (Behavior-Driven Development)",
-    logos: ["./files/scrum.svg"],
+      "Mi formación actual abarca metodologías como <strong>OOP</strong> y <strong>CI/CD</strong> (Integración continua / Entrega continua). Sin embargo, durante el próximo año tengo la intención de expandir mis conocimientos para incluir metodologías como <strong>AGILE</strong>, <strong>TDD</strong> (Test-Driven Development) y <strong>BDD</strong> (Behavior-Driven Development), entre otras.",
+    logos: [
+      { src: "./files/oop.png", name: "OOP" },
+      { src: "./files/cicd.png", name: "CI/CD" },
+      { src: "./files/scrum.svg", name: "Scrum" }
+    ],
   },
 ];
 
@@ -48,14 +58,15 @@ function updateContent(index) {
 
   const descriptionElement = document.createElement("p");
   descriptionElement.classList.add("skills__p");
-  descriptionElement.textContent = content.description;
+  descriptionElement.innerHTML = content.description;
 
   const logosContainer = document.createElement("div");
   logosContainer.classList.add("skills__logos");
 
   content.logos.forEach((logo) => {
     const logoElement = document.createElement("img");
-    logoElement.src = logo;
+    logoElement.src = logo.src;
+    logoElement.title = logo.name;
     logoElement.classList.add("skills__img");
     logosContainer.appendChild(logoElement);
   });
