@@ -3,7 +3,7 @@
 }
 
 .showOn {
-    animation: show-section 2s forwards
+    animation: show-section 2s forwards;
 }
 
 .w100 {
@@ -1023,7 +1023,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project__card {
-    width: 45%;
+    width: 47%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1037,7 +1037,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project__images {
-    max-width: 900px;
+    max-width: 800px;
     opacity: .7;
     transition: opacity .3s
 }
@@ -1051,7 +1051,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project__img--desktop {
-    width: 100%
+    width: 60%
 }
 
 .project__img--tablet {
