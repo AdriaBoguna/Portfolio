@@ -29,7 +29,7 @@ const checkInputs = () => {
 emailInput.addEventListener("input", checkInputs);
 commentInput.addEventListener("input", checkInputs);
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     // Aquí puedes agregar el código para manejar el envío del formulario
     console.log("Formulario enviado");
 });

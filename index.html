@@ -279,12 +279,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <form class="contact__form">
+                            <form class="contact__form" action="https://formspree.io/f/xdovqlvv" method="POST">
                                 <div class="contact__email">
-                                    <input type="email" id="emailInput" class="contact__emailInput" placeholder="Email..." required="" value="">
+                                    <input type="email" name="email" id="emailInput" class="contact__emailInput" placeholder="Email..." required="" value="">
                                     <span id="emailError" class="error"></span>
                                 </div>
-                                <textarea class="contact__comment" name="comment" rows="6" placeholder="Mensaje..." required=""></textarea>
+                                <textarea class="contact__comment" name="message" rows="6" placeholder="Mensaje..." required=""></textarea>
                                 <button type="submit" id="submitButton" class="btn btn--filled btn--submit w100" disabled="">Enviar</button>
                             </form>
                         </div>
